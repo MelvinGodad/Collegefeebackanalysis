@@ -1,0 +1,1879 @@
+window.dashboardData = {
+    "metrics": {
+        "total_responses": 200,
+        "avg_rating": 2.85,
+        "top_event": "Hackathon",
+        "avg_satisfaction": 36.5
+    },
+    "charts": {
+        "ratings_dist": {
+            "1": 28,
+            "2": 70,
+            "3": 29,
+            "4": 50,
+            "5": 23
+        },
+        "sentiment_dist": {
+            "Positive": 134,
+            "Negative": 60,
+            "Neutral": 6
+        },
+        "event_ratings": {
+            "Hackathon": 3.1714285714285713,
+            "Tech Fest 2024": 3.0,
+            "Music Concert": 2.8484848484848486,
+            "Career Fair": 2.7435897435897436,
+            "AI Workshop": 2.6857142857142855,
+            "Cultural Night": 2.6666666666666665
+        },
+        "dept_satisfaction": {
+            "Electronics": 43.329365079365076,
+            "CS": 41.382716049382715,
+            "Civil": 37.56862745098039,
+            "Mechanical": 37.22727272727273,
+            "Management": 32.760416666666664,
+            "IT": 25.494791666666664
+        },
+        "category_counts": {
+            "General": 120,
+            "Organization": 40,
+            "Time Management": 18,
+            "Speaker Quality": 14,
+            "Venue & Logistics": 8
+        },
+        "word_cloud": {
+            "bad": 23,
+            "timing": 23,
+            "off": 23,
+            "boring": 21,
+            "unengaging": 21,
+            "okay": 18,
+            "good": 16,
+            "could": 16,
+            "better": 16,
+            "event": 16,
+            "decent": 14,
+            "effort": 14,
+            "team": 14,
+            "average": 13,
+            "experience": 13,
+            "everything": 13,
+            "perfect": 13,
+            "great": 11,
+            "categorization": 11,
+            "well": 11,
+            "managed": 11,
+            "waste": 11,
+            "time": 11,
+            "amazing": 10,
+            "learned": 10,
+            "lot": 10,
+            "poorly": 8,
+            "organized": 8,
+            "venue": 8,
+            "hot": 8
+        }
+    },
+    "raw_data": [
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "IT",
+            "Year": "1st Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "CS",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Organization",
+            "Comments": "Very poorly organized."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Mechanical",
+            "Year": "3rd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Great categorization and well managed."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "IT",
+            "Year": "1st Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "Venue & Logistics",
+            "Comments": "The venue was too hot."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Mechanical",
+            "Year": "3rd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Good but could be better."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Electronics",
+            "Year": "4th Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Great categorization and well managed."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "IT",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Mechanical",
+            "Year": "3rd Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Amazing event! learned a lot."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Management",
+            "Year": "2nd Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Decent effort by the team."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Management",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Waste of time."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Mechanical",
+            "Year": "2nd Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "Speaker Quality",
+            "Comments": "Really enjoyed the speakers."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "IT",
+            "Year": "1st Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Waste of time."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Civil",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Organization",
+            "Comments": "Very poorly organized."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "CS",
+            "Year": "4th Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Mechanical",
+            "Year": "2nd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Good but could be better."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Management",
+            "Year": "4th Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Mechanical",
+            "Year": "2nd Year",
+            "Rating": 1,
+            "Sentiment": "Positive",
+            "Category": "Venue & Logistics",
+            "Comments": "The venue was too hot."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "IT",
+            "Year": "1st Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Management",
+            "Year": "4th Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Civil",
+            "Year": "3rd Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Electronics",
+            "Year": "2nd Year",
+            "Rating": 1,
+            "Sentiment": "Positive",
+            "Category": "Venue & Logistics",
+            "Comments": "The venue was too hot."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Electronics",
+            "Year": "2nd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Speaker Quality",
+            "Comments": "Really enjoyed the speakers."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Mechanical",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Civil",
+            "Year": "2nd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Great categorization and well managed."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Mechanical",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Good but could be better."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Management",
+            "Year": "4th Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Started very late."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "IT",
+            "Year": "1st Year",
+            "Rating": 3,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Average experience."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "IT",
+            "Year": "4th Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Good but could be better."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "IT",
+            "Year": "1st Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Waste of time."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Electronics",
+            "Year": "4th Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Amazing event! learned a lot."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Civil",
+            "Year": "1st Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "CS",
+            "Year": "2nd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Great categorization and well managed."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Mechanical",
+            "Year": "4th Year",
+            "Rating": 3,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Average experience."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Electronics",
+            "Year": "4th Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Management",
+            "Year": "3rd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Amazing event! learned a lot."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "IT",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Average experience."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Electronics",
+            "Year": "4th Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Civil",
+            "Year": "1st Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Best event of the year!"
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Civil",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Decent effort by the team."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Management",
+            "Year": "2nd Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Civil",
+            "Year": "4th Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Great categorization and well managed."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Management",
+            "Year": "4th Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "The food was delicious!"
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Electronics",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Electronics",
+            "Year": "4th Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Best event of the year!"
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Civil",
+            "Year": "4th Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Amazing event! learned a lot."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "CS",
+            "Year": "4th Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "IT",
+            "Year": "3rd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Everything was perfect."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Management",
+            "Year": "4th Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Good but could be better."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "CS",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Civil",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Average experience."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Electronics",
+            "Year": "3rd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Everything was perfect."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "CS",
+            "Year": "4th Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Everything was perfect."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Civil",
+            "Year": "1st Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Organization",
+            "Comments": "Very poorly organized."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Electronics",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Electronics",
+            "Year": "2nd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "IT",
+            "Year": "4th Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "CS",
+            "Year": "1st Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Good but could be better."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Electronics",
+            "Year": "4th Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Good but could be better."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "IT",
+            "Year": "1st Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Everything was perfect."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Civil",
+            "Year": "3rd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Amazing event! learned a lot."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Electronics",
+            "Year": "1st Year",
+            "Rating": 2,
+            "Sentiment": "Neutral",
+            "Category": "Speaker Quality",
+            "Comments": "Speaker was inaudible."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Management",
+            "Year": "3rd Year",
+            "Rating": 1,
+            "Sentiment": "Neutral",
+            "Category": "Speaker Quality",
+            "Comments": "Speaker was inaudible."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Mechanical",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Average experience."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Mechanical",
+            "Year": "4th Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Decent effort by the team."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Mechanical",
+            "Year": "3rd Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "Speaker Quality",
+            "Comments": "Really enjoyed the speakers."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Electronics",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Waste of time."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Civil",
+            "Year": "1st Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Management",
+            "Year": "1st Year",
+            "Rating": 1,
+            "Sentiment": "Positive",
+            "Category": "Venue & Logistics",
+            "Comments": "The venue was too hot."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Mechanical",
+            "Year": "3rd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Great categorization and well managed."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Electronics",
+            "Year": "1st Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Waste of time."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Electronics",
+            "Year": "2nd Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Mechanical",
+            "Year": "2nd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Everything was perfect."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "CS",
+            "Year": "4th Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Waste of time."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "IT",
+            "Year": "4th Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "IT",
+            "Year": "4th Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Electronics",
+            "Year": "1st Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Waste of time."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Civil",
+            "Year": "1st Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Great categorization and well managed."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Civil",
+            "Year": "1st Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Electronics",
+            "Year": "4th Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Decent effort by the team."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Mechanical",
+            "Year": "2nd Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Good but could be better."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "CS",
+            "Year": "3rd Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Great categorization and well managed."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Management",
+            "Year": "2nd Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Decent effort by the team."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Civil",
+            "Year": "2nd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "The food was delicious!"
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "CS",
+            "Year": "2nd Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Best event of the year!"
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "CS",
+            "Year": "1st Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Civil",
+            "Year": "1st Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Amazing event! learned a lot."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Management",
+            "Year": "4th Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Electronics",
+            "Year": "4th Year",
+            "Rating": 4,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Average experience."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Mechanical",
+            "Year": "2nd Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Decent effort by the team."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "CS",
+            "Year": "1st Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Good but could be better."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Management",
+            "Year": "4th Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Started very late."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "IT",
+            "Year": "4th Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Electronics",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Decent effort by the team."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "CS",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Good but could be better."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Management",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Management",
+            "Year": "1st Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Decent effort by the team."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Management",
+            "Year": "3rd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "The food was delicious!"
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Management",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Management",
+            "Year": "3rd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Good but could be better."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "IT",
+            "Year": "2nd Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Started very late."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Management",
+            "Year": "1st Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "The food was delicious!"
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Management",
+            "Year": "4th Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Organization",
+            "Comments": "Very poorly organized."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Civil",
+            "Year": "1st Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "The food was delicious!"
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Electronics",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "CS",
+            "Year": "2nd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Good but could be better."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Electronics",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Civil",
+            "Year": "2nd Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "CS",
+            "Year": "3rd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Management",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Management",
+            "Year": "1st Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "IT",
+            "Year": "4th Year",
+            "Rating": 1,
+            "Sentiment": "Positive",
+            "Category": "Venue & Logistics",
+            "Comments": "The venue was too hot."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Electronics",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "Venue & Logistics",
+            "Comments": "The venue was too hot."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Mechanical",
+            "Year": "3rd Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Started very late."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Electronics",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Mechanical",
+            "Year": "3rd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Speaker Quality",
+            "Comments": "Really enjoyed the speakers."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Civil",
+            "Year": "2nd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Everything was perfect."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Mechanical",
+            "Year": "1st Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Good but could be better."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Mechanical",
+            "Year": "1st Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Started very late."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Management",
+            "Year": "2nd Year",
+            "Rating": 1,
+            "Sentiment": "Positive",
+            "Category": "Venue & Logistics",
+            "Comments": "The venue was too hot."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "CS",
+            "Year": "2nd Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "CS",
+            "Year": "4th Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Amazing event! learned a lot."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Electronics",
+            "Year": "1st Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Decent effort by the team."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "CS",
+            "Year": "3rd Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "IT",
+            "Year": "1st Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Waste of time."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "CS",
+            "Year": "1st Year",
+            "Rating": 2,
+            "Sentiment": "Neutral",
+            "Category": "Speaker Quality",
+            "Comments": "Speaker was inaudible."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "CS",
+            "Year": "4th Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "The food was delicious!"
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Management",
+            "Year": "2nd Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Waste of time."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Mechanical",
+            "Year": "4th Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Average experience."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Management",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Decent effort by the team."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "IT",
+            "Year": "3rd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Amazing event! learned a lot."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Mechanical",
+            "Year": "1st Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Waste of time."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Electronics",
+            "Year": "2nd Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "IT",
+            "Year": "1st Year",
+            "Rating": 1,
+            "Sentiment": "Neutral",
+            "Category": "Speaker Quality",
+            "Comments": "Speaker was inaudible."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Electronics",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Electronics",
+            "Year": "4th Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Speaker Quality",
+            "Comments": "Really enjoyed the speakers."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Management",
+            "Year": "3rd Year",
+            "Rating": 1,
+            "Sentiment": "Positive",
+            "Category": "Venue & Logistics",
+            "Comments": "The venue was too hot."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Mechanical",
+            "Year": "1st Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "IT",
+            "Year": "1st Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "Organization",
+            "Comments": "Very poorly organized."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Civil",
+            "Year": "1st Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Management",
+            "Year": "4th Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Best event of the year!"
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "IT",
+            "Year": "1st Year",
+            "Rating": 1,
+            "Sentiment": "Neutral",
+            "Category": "Speaker Quality",
+            "Comments": "Speaker was inaudible."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Civil",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Organization",
+            "Comments": "Very poorly organized."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Electronics",
+            "Year": "1st Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Electronics",
+            "Year": "4th Year",
+            "Rating": 4,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Average experience."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Civil",
+            "Year": "3rd Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Started very late."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Management",
+            "Year": "4th Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "CS",
+            "Year": "3rd Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Electronics",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Good but could be better."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "CS",
+            "Year": "2nd Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Amazing event! learned a lot."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Electronics",
+            "Year": "2nd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Good but could be better."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Electronics",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Decent effort by the team."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Mechanical",
+            "Year": "1st Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Electronics",
+            "Year": "1st Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "IT",
+            "Year": "3rd Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Mechanical",
+            "Year": "1st Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Amazing event! learned a lot."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "CS",
+            "Year": "4th Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Average experience."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Civil",
+            "Year": "4th Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Civil",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Mechanical",
+            "Year": "4th Year",
+            "Rating": 1,
+            "Sentiment": "Neutral",
+            "Category": "Speaker Quality",
+            "Comments": "Speaker was inaudible."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Civil",
+            "Year": "4th Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "Speaker Quality",
+            "Comments": "Really enjoyed the speakers."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Electronics",
+            "Year": "4th Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Everything was perfect."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "IT",
+            "Year": "4th Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Decent effort by the team."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Mechanical",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Civil",
+            "Year": "1st Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "CS",
+            "Year": "3rd Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Decent effort by the team."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "IT",
+            "Year": "2nd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Best event of the year!"
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Management",
+            "Year": "3rd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "The food was delicious!"
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Mechanical",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Average experience."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Management",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Civil",
+            "Year": "2nd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Great categorization and well managed."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Civil",
+            "Year": "3rd Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Civil",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Civil",
+            "Year": "4th Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Everything was perfect."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Electronics",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Organization",
+            "Comments": "Very poorly organized."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Management",
+            "Year": "4th Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "Music Concert",
+            "Department": "Mechanical",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Decent effort by the team."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "IT",
+            "Year": "3rd Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "IT",
+            "Year": "1st Year",
+            "Rating": 4,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Average experience."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "IT",
+            "Year": "4th Year",
+            "Rating": 4,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Average experience."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "IT",
+            "Year": "3rd Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Everything was perfect."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Mechanical",
+            "Year": "1st Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Everything was perfect."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Mechanical",
+            "Year": "4th Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Good but could be better."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Electronics",
+            "Year": "1st Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Civil",
+            "Year": "1st Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Great categorization and well managed."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "CS",
+            "Year": "1st Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Everything was perfect."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "CS",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Waste of time."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Electronics",
+            "Year": "3rd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Speaker Quality",
+            "Comments": "Really enjoyed the speakers."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Mechanical",
+            "Year": "1st Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "Civil",
+            "Year": "2nd Year",
+            "Rating": 1,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Boring and unengaging."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "CS",
+            "Year": "4th Year",
+            "Rating": 2,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Electronics",
+            "Year": "3rd Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "Speaker Quality",
+            "Comments": "Really enjoyed the speakers."
+        },
+        {
+            "Event_Name": "Cultural Night",
+            "Department": "Civil",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "General",
+            "Comments": "Average experience."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Civil",
+            "Year": "3rd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Organization",
+            "Comments": "Very poorly organized."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "IT",
+            "Year": "2nd Year",
+            "Rating": 2,
+            "Sentiment": "Negative",
+            "Category": "Time Management",
+            "Comments": "Started very late."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Electronics",
+            "Year": "2nd Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Best event of the year!"
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "IT",
+            "Year": "2nd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "It was okay."
+        },
+        {
+            "Event_Name": "Tech Fest 2024",
+            "Department": "IT",
+            "Year": "2nd Year",
+            "Rating": 3,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Not bad, but timing was off."
+        },
+        {
+            "Event_Name": "Career Fair",
+            "Department": "Electronics",
+            "Year": "3rd Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Everything was perfect."
+        },
+        {
+            "Event_Name": "AI Workshop",
+            "Department": "Mechanical",
+            "Year": "4th Year",
+            "Rating": 4,
+            "Sentiment": "Positive",
+            "Category": "Organization",
+            "Comments": "Great categorization and well managed."
+        },
+        {
+            "Event_Name": "Hackathon",
+            "Department": "Electronics",
+            "Year": "4th Year",
+            "Rating": 5,
+            "Sentiment": "Positive",
+            "Category": "General",
+            "Comments": "Everything was perfect."
+        }
+    ]
+};

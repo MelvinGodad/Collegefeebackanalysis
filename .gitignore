@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+/output/*.png
+/output/*.csv
+/data/*.csv
+!/data/student_feedback.csv
+.DS_Store
+Thumbs.db
