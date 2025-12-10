@@ -4,165 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Life Analytics</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>College Event Feedback Analytics</title>
+    <link rel="stylesheet" href="landing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="dashboard-container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="logo">
-                <h2>🎓 CampusInsights</h2>
+    <div class="bg-gradient"></div>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>College Event Feedback Analytics</h1>
+            <p class="tagline">Turning Student Feedback into Smart Campus Decisions</p>
+            <p class="description">
+                Discover how raw student feedback transforms into meaningful insights using Python, Google Colab, and
+                machine learning. This project analyzes real college event surveys — ratings, comments, and suggestions
+                — and converts them into visual reports that help organizers improve future events.
+            </p>
+            <div class="cta-group">
+                <a href="dashboard.html" class="btn btn-primary">👉 View Dashboard</a>
+                <a href="analysis_notebook.ipynb" class="btn btn-secondary">👉 Explore Notebook</a>
+                <a href="analysis_report.md" class="btn btn-secondary download-btn">👉 Download Report</a>
             </div>
-            <nav>
-                <ul>
-                    <li class="nav-item active" data-target="view-dashboard"><a href="#">Dashboard</a></li>
-                    <li class="nav-item" data-target="view-analytics"><a href="#">Analytics</a></li>
-                    <li class="nav-item" data-target="view-events"><a href="#">Events</a></li>
-                    <li class="nav-item" data-target="view-settings"><a href="#">Settings</a></li>
-                </ul>
-            </nav>
-            <div class="sidebar-footer">
-                <a href="landing.html"
-                    style="display: block; color: var(--accent); text-decoration: none; margin-bottom: 0.5rem; font-size: 0.9rem;">←
-                    Back to Home</a>
-                <p>v2.0 Pro</p>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section">
+            <h2 class="section-title">What This Project Does</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="card-icon">🧹</span>
+                    <h3>Data Cleaning</h3>
+                    <p>Cleans and prepares Google Form (CSV) feedback for accurate analysis by determining missing
+                        values and formatting text.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">📊</span>
+                    <h3>Rating Patterns</h3>
+                    <p>Analyzes satisfaction rating patterns (1–5 scale) to understand overall student engagement and
+                        event success.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">🧠</span>
+                    <h3>Sentiment Scoring</h3>
+                    <p>Performs sentiment scoring on text responses using NLP (TextBlob) to classify feedback as
+                        Positive, Neutral, or Negative.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">☁️</span>
+                    <h3>Visual Insights</h3>
+                    <p>Generates word clouds and beautiful charts to visualize trends and common student opinions
+                        instantly.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">🏆</span>
+                    <h3>Top Events</h3>
+                    <p>Identifies top-liked events and specific improvement areas based on data-driven metrics like
+                        Satisfaction Scores.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">📈</span>
+                    <h3>Decision Dashboard</h3>
+                    <p>Builds a clear, professional dashboard that puts actionable metrics at your fingertips.</p>
+                </div>
             </div>
-        </aside>
+        </section>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <header class="top-bar">
-                <h1>Student Feedback Overview</h1>
-                <div class="controls">
-                    <select id="deptFilter" class="filter-select">
-                        <option value="all">All Departments</option>
-                    </select>
-                    <button id="applyFilters" class="btn-primary">Apply Filter</button>
-                    <button id="exportReport" class="btn-secondary">Export Report</button>
-                </div>
-            </header>
-
-            <!-- Views Container -->
-            <div id="views-container">
-
-                <!-- 1. Dashboard View (Default) -->
-                <div id="view-dashboard" class="content-view active">
-                    <!-- KPI Cards -->
-                    <section class="kpi-grid">
-                        <div class="kpi-card">
-                            <h3>Total Feedback</h3>
-                            <p id="total-responses" class="kpi-value">--</p>
-                            <span class="trend up">↑ 12% vs last sem</span>
-                        </div>
-                        <div class="kpi-card">
-                            <h3>Avg Rating</h3>
-                            <p id="avg-rating" class="kpi-value">--</p>
-                            <span class="trend down">↓ 0.2</span>
-                        </div>
-                        <div class="kpi-card">
-                            <h3>Satisfaction Score</h3>
-                            <p id="avg-satisfaction" class="kpi-value">--</p>
-                            <span class="trend up">High Engagement</span>
-                        </div>
-                        <div class="kpi-card">
-                            <h3>Top Event</h3>
-                            <p id="top-event" class="kpi-value small">--</p>
-                        </div>
-                    </section>
-
-                    <!-- Charts Grid -->
-                    <section class="charts-grid-dynamic">
-                        <!-- Row 1 -->
-                        <div class="chart-container span-full">
-                            <h3>Event Performance Ranking</h3>
-                            <div class="canvas-wrapper">
-                                <canvas id="eventRatingsChart"></canvas>
-                            </div>
-                        </div>
-
-                        <!-- Row 2 -->
-                        <div class="chart-container">
-                            <h3>Review Sentiment</h3>
-                            <div class="canvas-wrapper">
-                                <canvas id="sentimentChart"></canvas>
-                            </div>
-                        </div>
-                        <div class="chart-container">
-                            <h3>Department Satisfaction</h3>
-                            <div class="canvas-wrapper">
-                                <canvas id="deptSatisfactionChart"></canvas>
-                            </div>
-                        </div>
-
-                        <!-- Row 3 -->
-                        <div class="chart-container">
-                            <h3>Ratings Distribution</h3>
-                            <div class="canvas-wrapper">
-                                <canvas id="ratingsChart"></canvas>
-                            </div>
-                        </div>
-                        <div class="chart-container">
-                            <h3>Feedback Categories</h3>
-                            <div class="canvas-wrapper">
-                                <canvas id="categoryChart"></canvas>
-                            </div>
-                        </div>
-
-                        <!-- Row 4 -->
-                        <div class="chart-container span-full" style="height: auto; min-height: 250px;">
-                            <h3>Student Voice (Keywords)</h3>
-                            <div id="wordCloudContainer" class="word-cloud"></div>
-                        </div>
-                    </section>
-                </div>
-
-                <!-- 2. Analytics View -->
-                <div id="view-analytics" class="content-view" style="display: none;">
-                    <h2>Raw Data Analytics</h2>
-                    <div style="background: var(--bg-card); border-radius: 12px; padding: 1.5rem; overflow-x: auto;">
-                        <table id="analyticsTable"
-                            style="width: 100%; border-collapse: collapse; color: var(--text-secondary);">
-                            <thead>
-                                <tr style="text-align: left; border-bottom: 1px solid var(--border);">
-                                    <th style="padding: 10px;">Event</th>
-                                    <th style="padding: 10px;">Dept</th>
-                                    <th style="padding: 10px;">Rating</th>
-                                    <th style="padding: 10px;">Sentiment</th>
-                                    <th style="padding: 10px;">Comment</th>
-                                </tr>
-                            </thead>
-                            <tbody id="analyticsTableBody"></tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- 3. Events View -->
-                <div id="view-events" class="content-view" style="display: none;">
-                    <h2>Events Overview</h2>
-                    <div id="events-list-container" class="kpi-grid">
-                        <!-- Populated by JS -->
-                    </div>
-                </div>
-
-                <!-- 4. Settings View -->
-                <div id="view-settings" class="content-view" style="display: none;">
-                    <h2>Settings</h2>
-                    <div class="chart-container">
-                        <p>System Version: 2.0.1</p>
-                        <p>Last Data Update: <span id="last-update-time">Just now</span></p>
-                        <button class="btn-secondary" onclick="alert('Cache cleared!')">Clear Cache</button>
-                    </div>
-                </div>
-
+        <!-- Tools Used -->
+        <section class="tools-section">
+            <h2 class="section-title">Tools & Libraries</h2>
+            <div class="tools-list">
+                <span class="tool-tag">Python</span>
+                <span class="tool-tag">pandas</span>
+                <span class="tool-tag">TextBlob</span>
+                <span class="tool-tag">VADER</span>
+                <span class="tool-tag">Matplotlib</span>
+                <span class="tool-tag">Seaborn</span>
+                <span class="tool-tag">Chart.js</span>
+                <span class="tool-tag">Google Colab</span>
             </div>
-        </main>
+        </section>
+
+        <!-- Value Proposition -->
+        <section class="section">
+            <div class="value-prop">
+                <h2>Why It Matters</h2>
+                <p style="font-size: 1.1rem; margin-top: 1rem; color: #cbd5e1;">
+                    This project empowers colleges to make data-backed decisions, improve event planning, understand
+                    student expectations, and enhance campus experience using simple yet powerful data science
+                    techniques.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Built with data-driven thinking. Designed to improve student experiences.</p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.6;">&copy; 2025 Campus Analytics Project</p>
+        </footer>
     </div>
-    <script src="data/dashboard_data.js"></script>
-    <script src="js/app.js"></script>
 </body>
 
 </html>

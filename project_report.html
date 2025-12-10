@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Life Analytics - Technical Report</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #020617;
+            --accent: #38bdf8;
+            --text: #1e293b;
+            --light-bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            color: var(--text);
+            line-height: 1.8;
+            margin: 0;
+            background: #e2e8f0;
+            padding: 2rem;
+        }
+
+        #report-content {
+            background: white;
+            width: 210mm;
+            /* A4 width */
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 2.5cm;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        /* Print Styling */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            #report-content {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            .page-break {
+                page-break-before: always;
+            }
+        }
+
+        /* Typography */
+        h1,
+        h2,
+        h3 {
+            font-family: 'Inter', sans-serif;
+            color: var(--primary);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            color: #475569;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        ul {
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            background: var(--light-bg);
+            padding: 2px 4px;
+            border-radius: 4px;
+            color: #d63384;
+        }
+
+        pre {
+            background: #0f172a;
+            color: #f1f5f9;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+
+        /* Components */
+        .title-page {
+            text-align: center;
+            padding-top: 30%;
+            height: 80vh;
+            /* Approximate visual height of page 1 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #64748b;
+            margin-bottom: 3rem;
+        }
+
+        .meta {
+            margin-top: auto;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        .download-btn {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
+            font-family: 'Inter', sans-serif;
+            z-index: 1000;
+            transition: transform 0.2s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="downloadPDF()" class="download-btn no-print">Download PDF Report</button>
+
+    <div id="report-content">
+        <!-- Page 1: Title -->
+        <div class="title-page">
+            <h1>Campus Life Analytics</h1>
+            <p class="subtitle">Comprehensive Technical Report & System Documentation</p>
+
+            <div style="margin: 3rem 0;">
+                <p><strong>Prepared By:</strong> Melvin Godad</p>
+            </div>
+
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Page 2: Introduction -->
+        <h2>1. Executive Summary</h2>
+        <p>
+            The <strong>Campus Life Analytics</strong> project is a data-driven initiative designed to modernize the way
+            educational institutions collect, analyze, and act upon student feedback. Traditionally, event feedback is
+            collected via scattered Google Forms and analyzed manually, leading to delays and lost insights.
+        </p>
+        <p>
+            This system automates the entire pipeline: from data simulation and cleaning to sentiment analysis using
+            Natural Language Processing (NLP) and dynamic visualization. The result is a real-time, interactive
+            dashboard that empowers campus organizers to make informed decisions to improve student satisfaction and
+            engagement.
+        </p>
+
+        <h2>2. Project Objectives</h2>
+        <ul>
+            <li><strong>Data Centralization:</strong> Aggregate feedback from multiple events into a unified structure.
+            </li>
+            <li><strong>Automated Insights:</strong> Use algorithms to calculate satisfaction scores and classify
+                feedback topics automatically.</li>
+            <li><strong>Dynamic Reporting:</strong> Replace static PDFs with an interactive web dashboard.</li>
+            <li><strong>Scalability:</strong> Built on a modular Python and JavaScript architecture to handle extensive
+                datasets.</li>
+        </ul>
+
+        <div class="page-break"></div>
+
+        <!-- Page 3: Technology Stack -->
+        <h2>3. Technology Stack & Libraries</h2>
+        <p>This project leverages a robust stack of open-source tools to ensure reliability, performance, and ease of
+            maintenance.</p>
+
+        <h3>3.1 Backend & Data Processing (Python)</h3>
+        <ul>
+            <li><strong>Python 3.x:</strong> The core programming language used for scripting the data generation and
+                analysis pipelines availability, and rich ecosystem of data libraries.</li>
+            <li><strong>pandas (`import pandas as pd`):</strong> Used for high-performance data manipulation. It handles
+                CSV loading, cleaning (removing nulls), and aggregations (grouping by Event/Department).</li>
+            <li><strong>TextBlob (`from textblob import TextBlob`):</strong> A simplified NLP library used for Sentiment
+                Analysis. It calculates a 'Polarity' score (-1 to +1) for each comment to determine if feedback is
+                Positive, Neutral, or Negative.</li>
+            <li><strong>Comparison to Alternatives:</strong> TextBlob was chosen over VADER or NLTK for its lightweight
+                nature and sufficient accuracy for general feedback.</li>
+            <li><strong>os / json:</strong> Standard libraries used for file system operations and exporting processed
+                data to the frontend in JSON format.</li>
+        </ul>
+
+        <h3>3.2 Frontend & Visualization (Web)</h3>
+        <ul>
+            <li><strong>HTML5:</strong> Provides the semantic structure for the Landing Page and Dashboard.</li>
+            <li><strong>CSS3 (Modern):</strong> Utilizes CSS Variables, Flexbox, and CSS Grid for a responsive,
+                "glassmorphism" aesthetic (Dark Mode, gradients, blurred cards).</li>
+            <li><strong>JavaScript (ES6+):</strong> Handles client-side logic, including navigation (SPA-like tabs),
+                filters, and data fetching.</li>
+            <li><strong>Chart.js:</strong> A powerful library for rendering interactive canvas-based charts. Used for:
+                <ul>
+                    <li>Bar Charts (Ratings Distribution)</li>
+                    <li>Doughnut Charts (Sentiment Breakdown)</li>
+                    <li>Horizontal Bar Charts (Event Rankings)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="page-break"></div>
+
+        <!-- Page 4: System Architecture -->
+        <h2>4. System Architecture</h2>
+        <p>The system is divided into three distinct modules: Data Generation, Analysis Engine, and Presentation Layer.
+        </p>
+
+        <h3>4.1 Module 1: Data Generation</h3>
+        <p><strong>Script:</strong> <code>scripts/generate_feedback.py</code></p>
+        <p>
+            Since real data is often sensitive or unavailable during development, a custom simulation engine was built.
+            It generates realistic events ("Tech Fest", "Cultural Night") and correlates ratings with comments (e.g., a
+            "1-star" rating is paired with negative text like "Bad experience").
+        </p>
+        <pre>
+# Example Generation Logic
+data = {
+    "Event": random.choice(events),
+    "Rating": random.choices([1,2,3,4,5], weights=[5,5,15,40,35])[0],
+    "Comment": correlate_comment(rating)
+}
+        </pre>
+
+        <h3>4.2 Module 2: Analysis Engine</h3>
+        <p><strong>Script:</strong> <code>scripts/analyze_feedback.py</code></p>
+        <p>This is the brain of the system. It performs:</p>
+        <ol>
+            <li><strong>Ingestion:</strong> Reads `student_feedback.csv`.</li>
+            <li><strong>NLP Processing:</strong> Computes Sentiment Polarity.</li>
+            <li><strong>Classification:</strong> Keyword-based categorization (e.g., words like "speaker", "sound" ->
+                "Venue & Logistics").</li>
+            <li><strong>Export:</strong> Aggregates metrics and writes `dashboard_data.js` for the frontend to consume
+                directly.</li>
+        </ol>
+
+        <div class="page-break"></div>
+
+        <!-- Page 5: Key Features -->
+        <h2>5. Dashboard Features</h2>
+
+        <h3>5.1 Interactive Filters</h3>
+        <p>
+            The dashboard includes a real-time Department filter. When a user selects "IT" or "Management", the
+            JavaScript engine re-aggregates the raw data on the client side and instantly updates all charts. This
+            allows for granular analysis without page reloads.
+        </p>
+
+        <h3>5.2 Tabbed Navigation</h3>
+        <p>
+            To keep the interface clean, content is organized into logical views:
+        </p>
+        <ul>
+            <li><strong>Dashboard:</strong> High-level KPIs and Charts.</li>
+            <li><strong>Analytics:</strong> Raw tabular data with search and full comment viewing.</li>
+            <li><strong>Events:</strong> Scorecards for individual event performance.</li>
+            <li><strong>Settings:</strong> System status and controls.</li>
+        </ul>
+
+        <h3>5.3 Landing Page</h3>
+        <p>
+            To present a professional face to the project, a landing page (`index.html`) was designed. It features a
+            hero section, feature highlights, and direct links to the tools, serving as the entry point for
+            stakeholders.
+        </p>
+
+        <div class="page-break"></div>
+
+        <!-- Page 6: Conclusion -->
+        <h2>6. Conclusion & Future Scope</h2>
+        <p>
+            The Campus Life Analytics project successfully demonstrates how modern web technologies and Python-based
+            data science can converge to solve real administrative problems. By automating the feedback loop, the system
+            saves hundreds of hours of manual compilation and provides instant visibility into student sentiment.
+        </p>
+
+        <h3>Future Enhancements</h3>
+        <ul>
+            <li><strong>Database Integration:</strong> Move from CSV to SQLite/PostgreSQL for persistent storage.</li>
+            <li><strong>Authentication:</strong> Add Login for Admin vs. Student views.</li>
+            <li><strong>Real-time API:</strong> Replace static JSON export with a Flask/FastAPI backend for live
+                updates.</li>
+            <li><strong>Advanced NLP:</strong> Implement Topic Modeling (LDA) for deeper insight into unstructured text.
+            </li>
+        </ul>
+
+        <div style="margin-top: 4rem; text-align: center; border-top: 1px solid #cbd5e1; padding-top: 1rem;">
+            <p style="color: #64748b; font-size: 0.9rem;">End of Report</p>
+        </div>
+    </div>
+
+    <script>
+        function downloadPDF() {
+            const element = document.getElementById('report-content');
+            const opt = {
+                margin: 0,
+                filename: 'Campus_Life_Analytics_Report.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+
+            // Use html2pdf lib
+            html2pdf().set(opt).from(element).save();
+        }
+    </script>
+</body>
+
+</html>
